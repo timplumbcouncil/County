@@ -52,8 +52,8 @@ body {background-color:#f0f0e1}
     ul {margin:0; padding:0 ;}
     li {list-style: none}
     li a {list-style: none; padding: 13px 20px 14px 20px; border-bottom: 1px solid #5f5fac; width: 100%; float: left; color:#ffffff; background: $secondaryMobileNav}
-    .hasChildren a {background: url(../images/sub_closed.png) $secondaryMobileNav right center no-repeat}
-    .open a {background: url(../images/sub_open.png) $secondaryMobileNav right center no-repeat}
+    .hasChildren a {background: $secondaryMobileNav right center no-repeat}
+    .open a {background:  $secondaryMobileNav right center no-repeat}
     .hasChildren li a { background: #323278}
     .child {display:none}
     li li a {padding-left: 30px}
@@ -99,7 +99,8 @@ body {background-color:#f0f0e1}
 
 .container {background-color: #ffffff; min-height: 400px}
 
-.logo {background: url(../images/ccclogo-black.png); height: 104px; width:218px; display: block; margin: 15px auto 0 auto;}
+.logo {font-family: "ccc";  height: 104px; width:248px; display: block; margin: 15px auto 0 auto; font-size:250px; line-height: 100px; color: #000000}
+.logo:hover, .logo:active, .logo:focus {text-decoration:none; color:#000000}
 .banner {margin-top:30px; float: right; display: none;}
 
 .searchButtonBG {background-color: #f2f2f2}
@@ -123,6 +124,8 @@ li.tempactive a {text-decoration: none}
 .activateSubNav {width: 100px; height:34px;  display: block; float: right; padding: 7px 0 0 10px; background:  $secondaryMobileNav ; color:#ffffff; margin-top: 10px; }
 .activateSubNav:hover, .activateSubNav:focus {color:#ffffff; text-decoration: none !important}
 .activateSubNavIcon {float: right;margin-right: 12px;}
+.activateSubNavOpenClose {float: right;margin-right: 8px;}
+.activateIcon {font-size: 1.2em;position: relative;top: -2px;left: 2px;}
 
 
 .contentArea {background-color:#ffffff; width: 100%; margin: 0 0 14px 0; padding: 8px; font-size: 0.9em;}

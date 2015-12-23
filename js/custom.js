@@ -6,7 +6,7 @@ function showPrimaryMenu(parent){
 
 	// if sub nav is active hide it
 	if ($(".secondaryMobileNav").is(":visible")) {
-		$(".secondaryMobileNav").fadeOut(100);
+		closeSubPageSideNav();
 	}
 
 	// disabled, not needed
@@ -58,12 +58,13 @@ function showSubPageSideNav() {
 	  		$(".secondaryMobileNav").fadeOut(100);
 	  	} 
 
-	  	//$(".activateSubNav").css("background-image", "url(images/closeSections.png)")
+	  	
 	  	$(".activateSubNavIcon").html("b")
 	  	$(".movileBlackFader").css("top", 285);
 	  	$(".movileBlackFader").height($( document ).height() - 280);
 		$(".movileBlackFader").fadeIn(100);
 	  	$(".secondaryMobileNav").html($(".sideNavHolder").html())
+	  	$(".secondaryMobileNav .hasChildren a").not(".hasChildren li a").append("<span class='CCCfont activateSubNavOpenClose '>e</span>")
 	  	$(".secondaryMobileNav").fadeIn(100);
 	  	$(".secondaryMobileNav li li").not(".hasChildren").addClass("child")
 
@@ -80,7 +81,7 @@ function showSubPageSideNav() {
 
 function closeSubPageSideNav(){
 
-	$(".activateSubNavIcon").html("a")
+	$(".activateSubNavIcon").html("<span class='activateIcon'>a</span>")
 	$(".movileBlackFader").fadeOut(100);
   	$(".secondaryMobileNav").fadeOut(100);
 }
@@ -95,14 +96,14 @@ $(".secondaryMobileNav .hasChildren a").not(".secondaryMobileNav .child a").on("
 
 	if ($("#"+e.currentTarget.parentNode.id+" li").is(":visible")){
 
-		$(".secondaryMobileNav li").removeClass("open") 
+		$(".secondaryMobileNav li .activateSubNavOpenClose").html("e")
 		$(".child").hide()
 
 	} else {
 
-		$(".secondaryMobileNav li").removeClass("open")
+		$(".secondaryMobileNav li .activateSubNavIcon").html("e")
 		$(".child").hide()
-		$("#"+e.currentTarget.parentNode.id).addClass("open")
+		$("#"+e.currentTarget.parentNode.id + " .activateSubNavOpenClose").html("d")
 		$("#"+e.currentTarget.parentNode.id + " li").show()
 
 	}
