@@ -57,7 +57,7 @@
 
         <div class="col-xs-12 col-sm-7 pull-left mainNav">
           <ul>
-            <li class="active residents"><a href="\residents" >Residents</a>
+            <li class="residents"><a href="\residents" >Residents</a>
               <ul class="residentsSubNav"><li><a href="#">Residents Home</a></li>
                 <li><a href="#">Recycling, Bins &amp; Litter</a></li>
                 <li><a href="#">Council Tax</a></li>
@@ -119,6 +119,11 @@
       Hello
       
     </div>
+
+    <div class="secondaryMobileNav">
+      Hello
+      
+    </div>
     <div class="movileBlackFader"> </div>
     <div class="row">
     <div class="borderSplit hidden-xs"></div>
@@ -127,21 +132,12 @@
 
         <div class="col-sm-8 col-md-9 col-lg-9 mainContentArea pull-right">
 
-      <a class="mobileDropButton" href="javascript:showPrimaryMenu('residents')">Menu</a>
-      <h2>Residents</h2><br clear="both">
+      <a class="activateSubNav" href="javascript:showSubPageSideNav()">Sections</a>
+      <h2>Recycling, Bins &amp; Litter</h2><br clear="both">
       <div class="contentArea">
        <div id="homePage" class="clearfix">
       
-     
-
-    
-<a href="http://newsroom.carmarthenshire.gov.uk" target="_blank">
-<div id="newsRoomLinks" class="clearfix">
-  <p>Visit our Newsroom for your daily news highlights, updates and more</p>
-  
- 
-</div>
-</a>      
+         
 
     
     <div id="homePageMain" class="clearfix">
@@ -152,14 +148,8 @@
       
             <div class="bulletinsInner">        
               <h1 class="headerText">This week you asked us about...</h1>
-              <div class="bodyText"><ul>
-<li><a href="/home/residents/jobs-careers/">Job vacancies</a></li>
-<li><a href="/home/residents/travel-roads-parking/bus-services/bus-timetables/">Bus Timetables</a></li>
-<li><a href="/home/residents/planning/planning-applications/search-for-an-application/">How to search for a planning application</a></li>
-<li><a href="http://newsroom.carmarthenshire.gov.uk/news-archive/2015/12/festive-bin-collections/" target="_blank">Christmas bin/recycling collections</a></li>
-<li><a href="/home/residents/education-schools/school-term-dates/" title="School term dates">School Term Dates</a></li>
-</ul>
-<p>Did you know you can pay, apply, report and request a lot of your council services online?&nbsp;<a href="http://ilocal.carmarthenshire.gov.uk/" target="_blank">Visit i-Local for more information</a>.</p></div>
+              <div class="bodyText">
+<p>Did you know you can access most of our services 24/7 on i-Local? You can check what day we will collect your bins, if it's a blue or black bag week and download a calendar. Report a problem with litter or dog fouling or let us know if we've missed your bin collection. You can also keep up to date with changes to service by signing up for email/text alerts.</p></div>
             </div>    
             <div class="multipleBulletins bulletinsInner">        
               <h1 class="headerText">Latest Consultations</h1>
@@ -185,28 +175,73 @@
 </div></div>
 
 
-    <div class="col-sm-4 col-md-3 col-lg-3 sideNav pull-left">
+    <div class="col-sm-4 col-md-3 col-lg-3 sideNav_subPage pull-left">
       <div class="marginLeft">
       <div class="sideNavHolder"> 
         <ul>
-          <li class="hasChildren"><a href="#">Residents Home</a></li>
-          <li class="hasChildren"><a href="#">Recycling, Bins &amp; Litter</a></li>
-          <li class="hasChildren"><a href="#">Council Tax</a></li>
-          <li><a href="#">Benefits</a></li>
-          <li><a href="#">Housing</a></li>
-          <li><a href="#">Social Care &amp; Health</a></li>
-          <li><a href="#">Children &amp; Family Services</a></li>
-          <li class="hasChildren"><a href="#">Education &amp; Schools</a></li>
-          <li><a href="#">Planning</a></li>
-          <li class="hasChildren"><a href="#">Travel, Roads &amp; Parking</a></li>
-          <li><a href="#">Libraries &amp; Archives</a></li>
-          <li><a href="#">Leisure &amp; Outdoor Activities</a></li>
-          <li class="hasChildren"><a href="#">Theatres, Arts &amp; Museums</a></li>
-          <li><a href="#">Your Community</a></li>
-          <li><a href="#">Births, Deaths &amp; Marriages</a></li>
-          <li><a href="#">Environmental Health</a></li>
-          <li><a href="#">Trading Standards</a></li>
-          <li><a href="#">Jobs &amp; Careers</a></li>
+          <li class="active hasChildren" id="1"><a href="#">Recycling, Bins &amp; Litter</a>
+            <ul>
+              <li><a herf="#">How is it recycled</a></li>
+            </ul>
+          </li>
+          <li class="hasChildren" id="2"><a href="#">Why recycle?</a>
+            <ul>
+              <li><a href="#">Blue bags - Recycling</a></li>
+              <li><a href="#">Request blue bags</a></li>
+              <li><a href="#">Green bin - Food waste</a></li>
+              <li><a href="#">Black bags</a></li>
+              <li><a href="#">Garden waste</a></li>
+              <li><a href="#">Report a missed bin collection</a></li>
+              <li><a href="#">Help for older/disabled people</a></li>
+              <li><a href="#">A-Z of recycling</a></li>
+            </ul>
+          </li>
+          <li class="hasChildren" id="3"><a href="#">Recycling / bin collections</a>
+            <ul>
+              <li><a href="#">Recycling centres (the tip)</a></li>
+              <li><a href="#">Bulky waste</a></li>
+              <li><a href="#">Clinical / hygiene waste</a></li>
+            </ul>
+         </li>
+          <li class="hasChildren" id="4"><a href="#">Litter</a>
+            <ul>
+              <li><a href="#">Litter home</a></li>
+              <li><a href="#">Dog fouling</a></li>
+              <li><a href="#">Fly tipping</a></li>
+              <li><a href="#">Fly posting</a></li>
+              <li><a href="#">Graffiti</a></li>
+              <li><a href="#">Fines</a></li>
+            </ul>
+          </li>
+          <li class="hasChildren" id="5"><a href="#">Composting</a>
+            <ul>
+              <li><a href="#">Composting home</a></li>
+              <li><a href="#">Where can I get a bin?</a></li>
+              <li><a href="#">What goes in my bin?</a></li>
+              <li><a href="#">Where should I put my bin?</a></li>
+              <li><a href="#">What do I do with my compost?</a></li>
+              <li><a href="#">Other types of composting</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Electrical / Electronic waste</a></li>
+          <li class="hasChildren"id="6"><a href="#" >Love Food Hate Waste</a>
+            <ul>
+              <li><a href="#">How to avoid food waste</a></li>
+            </ul>
+          </li>
+          <li class="hasChildren" id="7"><a href="#">Real nappies</a>
+            <ul>
+                <li><a href="#">Real nappies home</a></li>
+                <li><a href="#">Real nappy guide</a></li>
+                <li><a href="#">Myths &amp; tips</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Stockists ListReal nappy guide</a></li>
+                <li><a href="#">Myths &amp; tips</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Stockists List</a></li>
+            </ul>
+          </li>
         </ul>
       </div>     </div>
     </div>
