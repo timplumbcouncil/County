@@ -34,7 +34,7 @@ function showPrimaryMenu(parent){
 
 	// load up hidden div with nav
 	$(".primaryMobileNav").html($("."+parent+"SubNav").html())
-	$(".primaryMobileNav").append("<a class='closePrimaryMenu' href='javascript:closePrimaryMenu()'><span class='hiddenText'>Close Primary Menu</span></a>")
+	$(".primaryMobileNav").append("<a class='closePrimaryMenu CCCfont' href='javascript:closePrimaryMenu()'>c<span class='hiddenText'>Close Primary Menu</span></a>")
 
 	// find top padding of black overlay (looks poor if under nav when fading)
 	var childElementsHeights = $('.primaryMobileNav li').length * 48
@@ -58,7 +58,8 @@ function showSubPageSideNav() {
 	  		$(".secondaryMobileNav").fadeOut(100);
 	  	} 
 
-	  	$(".activateSubNav").css("background-image", "url(images/closeSections.png)")
+	  	//$(".activateSubNav").css("background-image", "url(images/closeSections.png)")
+	  	$(".activateSubNavIcon").html("b")
 	  	$(".movileBlackFader").css("top", 285);
 	  	$(".movileBlackFader").height($( document ).height() - 280);
 		$(".movileBlackFader").fadeIn(100);
@@ -79,7 +80,7 @@ function showSubPageSideNav() {
 
 function closeSubPageSideNav(){
 
-	$(".activateSubNav").css("background-image", "url(images/menu_white.gif)")
+	$(".activateSubNavIcon").html("a")
 	$(".movileBlackFader").fadeOut(100);
   	$(".secondaryMobileNav").fadeOut(100);
 }
