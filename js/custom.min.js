@@ -6,7 +6,7 @@ function showPrimaryMenu(parent){
 
 	// if sub nav is active hide it
 	if ($(".secondaryMobileNav").is(":visible")) {
-		$(".secondaryMobileNav").fadeOut("fast");
+		$(".secondaryMobileNav").fadeOut(100);
 	}
 
 	// disabled, not needed
@@ -37,14 +37,14 @@ function showPrimaryMenu(parent){
 	$(".primaryMobileNav").append("<a class='closePrimaryMenu' href='javascript:closePrimaryMenu()'><span class='hiddenText'>Close Primary Menu</span></a>")
 
 	// find top padding of black overlay (looks poor if under nav when fading)
-	var childElementsHeights = $('.primaryMobileNav li').length * 29
+	var childElementsHeights = $('.primaryMobileNav li').length * 48
   	var pushDown = childElementsHeights + 250
   	$(".movileBlackFader").css("top", pushDown);
 	$(".movileBlackFader").height($( document ).height() - pushDown);
 	
 	// just do it
-	$(".primaryMobileNav").fadeIn("fast");
-	$(".movileBlackFader").fadeIn("fast");
+	$(".primaryMobileNav").fadeIn(100);
+	$(".movileBlackFader").fadeIn(100);
 }
 
 
@@ -54,15 +54,16 @@ function showSubPageSideNav() {
 
 		if ($(".sideNav").is(":visible") || $(".sideNav_subPage").is(":visible")) {
 
-	  		$(".primaryMobileNav").fadeOut("fast");
-	  		$(".secondaryMobileNav").fadeOut("fast");
+	  		$(".primaryMobileNav").fadeOut(100);
+	  		$(".secondaryMobileNav").fadeOut(100);
 	  	} 
 
+	  	$(".activateSubNav").css("background-image", "url(images/closeSections.png)")
+	  	$(".movileBlackFader").css("top", 285);
 	  	$(".movileBlackFader").height($( document ).height() - 280);
-		$(".movileBlackFader").fadeIn("fast");
-		$(".movileBlackFader").css("top", 285);
+		$(".movileBlackFader").fadeIn(100);
 	  	$(".secondaryMobileNav").html($(".sideNavHolder").html())
-	  	$(".secondaryMobileNav").fadeIn("fast");
+	  	$(".secondaryMobileNav").fadeIn(100);
 	  	$(".secondaryMobileNav li li").not(".hasChildren").addClass("child")
 
 	  	setSubMenuClickActions()}
@@ -78,8 +79,9 @@ function showSubPageSideNav() {
 
 function closeSubPageSideNav(){
 
-	$(".movileBlackFader").fadeOut("fast");
-  	$(".secondaryMobileNav").fadeOut("fast");
+	$(".activateSubNav").css("background-image", "url(images/menu_white.gif)")
+	$(".movileBlackFader").fadeOut(100);
+  	$(".secondaryMobileNav").fadeOut(100);
 }
 
 
@@ -114,8 +116,8 @@ function closePrimaryMenu() {
 	$("."+inactiveToActive).removeClass('tempactive');
 	$(".active").removeAttr("style")
 	$("."+activeToRestore).addClass("active");
-	$(".movileBlackFader").fadeOut("fast");
-	$(".primaryMobileNav").fadeOut("fast");
+	$(".movileBlackFader").fadeOut(100);
+	$(".primaryMobileNav").fadeOut(100);
 	
 }
 

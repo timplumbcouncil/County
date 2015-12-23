@@ -16,12 +16,12 @@ body { background-color: #f0f0e1; }
 .primaryMobileNav { -webkit-box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); -moz-box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); position: absolute; top: 250px; left: 0; background-color: #dbd7ca; width: 100%; height: auto; z-index: 5; display: none; }
 .primaryMobileNav ul { margin: 0; padding: 0; }
 .primaryMobileNav li { list-style: none; }
-.primaryMobileNav li a { list-style: none; padding: 4px 20px 4px 20px; border-bottom: 1px solid #bab7ac; width: 100%; float: left; color: #000000; }
+.primaryMobileNav li a { list-style: none; padding: 13px 20px 14px 20px; border-bottom: 1px solid #bab7ac; width: 100%; float: left; color: #000000; }
 
 .secondaryMobileNav { -webkit-box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); -moz-box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); box-shadow: 0px 20px 35px -6px rgba(0, 0, 0, 0.77); position: absolute; top: 284px; left: 0; width: 100%; height: auto; z-index: 5; display: none; }
 .secondaryMobileNav ul { margin: 0; padding: 0; }
 .secondaryMobileNav li { list-style: none; }
-.secondaryMobileNav li a { list-style: none; padding: 4px 20px 4px 20px; border-bottom: 1px solid #5f5fac; width: 100%; float: left; color: #ffffff; background: #43439e; }
+.secondaryMobileNav li a { list-style: none; padding: 13px 20px 14px 20px; border-bottom: 1px solid #5f5fac; width: 100%; float: left; color: #ffffff; background: #43439e; }
 .secondaryMobileNav .hasChildren a { background: url(../images/sub_closed.png) #43439e right center no-repeat; }
 .secondaryMobileNav .open a { background: url(../images/sub_open.png) #43439e right center no-repeat; }
 .secondaryMobileNav .hasChildren li a { background: #323278; }
@@ -93,7 +93,7 @@ li.tempactive a { text-decoration: none; }
 
 .contentArea { background-color: #ffffff; width: 100%; margin: 0 0 14px 0; padding: 8px; font-size: 0.9em; }
 
-.closePrimaryMenu { position: absolute; right: 6px; top: -18px; z-index: 20; height: 22px; width: 22px; display: block; background: url(../images/closeMenu.png); }
+.closePrimaryMenu { position: absolute; right: 2px; top: -25px; z-index: 20; height: 34px; width: 34px; display: block; background: url(../images/closeMenu32.png); }
 
 .marginLeft { margin-left: -15px; }
 
